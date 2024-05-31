@@ -25,7 +25,7 @@ if ($f !== false) {
             $filter_data[$email]['lastOrderDate'] = $orderDate;
             $filter_data[$email]['orderDates'][] = $orderDate;
             $filter_data[$email]['totalOrder']++;
-            $filter_data[$email]['totalQuantity'] = $quantity;
+            $filter_data[$email]['totalQuantity'] += $quantity;
         }
     }
 }
