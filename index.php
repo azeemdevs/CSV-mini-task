@@ -34,7 +34,7 @@ fclose($f);
 $newOpen = fopen($new_csv_file, "w");
 if ($newOpen !== false) {
     // add the headings
-    fputcsv($newOpen, ['Customer Email', 'First Order Date', 'Last Order Date', 'Days Difference', 'email', 'quantity']);
+    fputcsv($newOpen, ['Customer Email', 'First Order Date', 'Last Order Date', 'Days Difference', 'Total Order', 'quantity']);
 
     foreach ($filter_data as $email => $customer) {
         $firstOrderDate = $customer['firstOrderDate'];
